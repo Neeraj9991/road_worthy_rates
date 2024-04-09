@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Road Worthy Rates</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet" />
+    <style>
+      /* Custom Styles */
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f7f9;
+        color: #333;
+      }
+
+      header {
+        background-color: #6c5b7b;
+      }
+
+      section {
+        padding: 2rem 0;
+      }
+
+      .feature-card {
+        background-color: #e6e6e6;
+        border-radius: 1rem;
+      }
+
+      .cta-btn {
+        background-color: #6c5b7b;
+        color: #fff;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      .cta-btn:hover {
+        background-color: #4a3b4b;
+      }
+
+      .contact-form input[type="text"],
+      .contact-form input[type="email"],
+      .contact-form textarea {
+        background-color: #e6e6e6;
+      }
+
+      .contact-form input[type="text"]:focus,
+      .contact-form input[type="email"]:focus,
+      .contact-form textarea:focus {
+        outline: none;
+        border-color: #6c5b7b;
+      }
+
+      .contact-form button[type="submit"] {
+        background-color: #6c5b7b;
+        color: #fff;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      .contact-form button[type="submit"]:hover {
+        background-color: #4a3b4b;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="text-white py-4">
+      <div class="container mx-auto flex justify-between items-center px-4">
+        <h1 class="text-xl font-semibold">Road Worthy Rates</h1>
+        <nav class="hidden md:block">
+          <ul class="flex">
+            <li class="mr-6">
+              <a href="#about" class="hover:text-gray-300">About</a>
+            </li>
+            <li class="mr-6">
+              <a href="#features" class="hover:text-gray-300">Features</a>
+            </li>
+            <li class="mr-6">
+              <a href="#predict" class="hover:text-gray-300">Predict</a>
+            </li>
+            <li class="mr-6">
+              <a href="#contact" class="hover:text-gray-300">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="md:hidden">
+          <button
+            id="mobile-menu-button"
+            class="text-gray-300 hover:text-white focus:outline-none">
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="hidden md:hidden">
+        <ul class="flex flex-col items-center">
+          <li class="my-2">
+            <a href="#about" class="hover:text-gray-300">About</a>
+          </li>
+          <li class="my-2">
+            <a href="#features" class="hover:text-gray-300">Features</a>
+          </li>
+          <li class="my-2">
+            <a href="#predict" class="hover:text-gray-300">Predict</a>
+          </li>
+          <li class="my-2">
+            <a href="#contact" class="hover:text-gray-300">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <section id="hero" class="text-center">
+      <div class="container mx-auto px-4 sm:px-8">
+        <h2
+          class="text-lg md:text-2xl text-gray-800 font-semibold mb-2 md:mb-4">
+          Discover Your Dream Car's Price
+        </h2>
+        <p class="text-sm md:text-lg text-gray-700 mb-4 md:mb-6">
+          Make informed decisions in the automotive market with our accurate car
+          price predictions.
+        </p>
+        <a
+          href="#predict"
+          class="inline-block px-6 py-3 rounded-full text-white font-semibold text-lg cta-btn hover:bg-gray-600 transition duration-300 ease-in-out"
+          >Get Started</a
+        >
+      </div>
+    </section>
+
+    <section id="features" class="bg-white">
+      <div class="container mx-auto px-4 sm:px-8">
+        <h2
+          class="text-lg md:text-3xl text-center font-semibold text-gray-800 mb-4 md:mb-8">
+          Key Features
+        </h2>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
+          <div class="feature-card p-4 md:p-6">
+            <h3
+              class="text-md md:text-xl font-semibold mb-2 md:mb-4 text-gray-800">
+              Accurate Predictions
+            </h3>
+            <p class="text-sm md:text-base text-gray-700">
+              Our advanced algorithms provide precise car price predictions.
+            </p>
+          </div>
+          <div class="feature-card p-4 md:p-6">
+            <h3
+              class="text-md md:text-xl font-semibold mb-2 md:mb-4 text-gray-800">
+              Data Analytics
+            </h3>
+            <p class="text-sm md:text-base text-gray-700">
+              Leverage data analytics for valuable insights into the automotive
+              market.
+            </p>
+          </div>
+          <div class="feature-card p-4 md:p-6">
+            <h3
+              class="text-md md:text-xl font-semibold mb-2 md:mb-4 text-gray-800">
+              Machine Learning
+            </h3>
+            <p class="text-sm md:text-base text-gray-700">
+              Continuous learning from data enhances prediction accuracy.
+            </p>
+          </div>
+          <div class="feature-card p-4 md:p-6">
+            <h3
+              class="text-md md:text-xl font-semibold mb-2 md:mb-4 text-gray-800">
+              User-Friendly Interface
+            </h3>
+            <p class="text-sm md:text-base text-gray-700">
+              Navigate seamlessly through our intuitive interface.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="predict" class="bg-gray-200">
+      <div class="container mx-auto px-4 sm:px-8">
+        <h2
+          class="text-lg md:text-3xl text-center font-semibold text-gray-800 mb-4 md:mb-8">
+          Predict Car Price
+        </h2>
+        <form id="prediction-form" class="max-w-md mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input
+              type="text"
+              name="company"
+              placeholder="Company"
+              class="block w-full px-4 py-3 rounded-md" />
+            <input
+              type="number"
+              name="year"
+              placeholder="Year"
+              class="block w-full px-4 py-3 rounded-md" />
+            <select name="owner" class="block w-full px-4 py-3 rounded-md">
+              <option value="First">First</option>
+              <option value="Second">Second</option>
+              <option value="Third">Third</option>
+              <option value="Fourth+">Fourth+</option>
+            </select>
+            <select name="fuel" class="block w-full px-4 py-3 rounded-md">
+              <option value="Petrol">Petrol</option>
+              <option value="Diesel">Diesel</option>
+            </select>
+            <input
+              type="number"
+              name="km_driven"
+              placeholder="Kilometers Driven"
+              class="block w-full px-4 py-3 rounded-md" />
+            <input
+              type="number"
+              name="mileage_mpg"
+              placeholder="Mileage (MPG)"
+              class="block w-full px-4 py-3 rounded-md" />
+            <input
+              type="number"
+              name="engine_cc"
+              placeholder="Engine (CC)"
+              class="block w-full px-4 py-3 rounded-md" />
+            <input
+              type="number"
+              name="seats"
+              placeholder="Seats"
+              class="block w-full px-4 py-3 rounded-md" />
+          </div>
+          <button
+            type="submit"
+            class="block w-full mt-6 px-8 py-3 rounded-full text-white font-semibold text-lg cta-btn hover:bg-gray-600 transition duration-300 ease-in-out">
+            Predict
+          </button>
+        </form>
+        <div
+          id="prediction-result"
+          class="mt-8 px-6 py-4 bg-white rounded-lg shadow-md text-center">
+          <!-- Result will be dynamically added here -->
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="bg-gray-800">
+      <div class="container mx-auto px-4 sm:px-8">
+        <h2
+          class="text-lg md:text-3xl text-center font-semibold text-white mb-4 md:mb-8">
+          Contact Us
+        </h2>
+        <div class="max-w-md mx-auto">
+          <form class="contact-form">
+            <input
+              type="text"
+              placeholder="Your Name"
+              class="block w-full px-4 py-3 mb-4 rounded-md" />
+            <input
+              type="email"
+              placeholder="Your Email"
+              class="block w-full px-4 py-3 mb-4 rounded-md" />
+            <textarea
+              placeholder="Your Message"
+              class="block w-full px-4 py-3 mb-4 rounded-md"></textarea>
+            <button
+              type="submit"
+              class="block w-full px-8 py-3 rounded-full text-white font-semibold text-lg cta-btn hover:bg-gray-600 transition duration-300 ease-in-out">
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-4 bg-gray-800 text-white text-center">
+      <div class="container mx-auto">
+        <p>&copy; 2024 Road Worthy Rates. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .getElementById("mobile-menu-button")
+        .addEventListener("click", function () {
+          var mobileMenu = document.getElementById("mobile-menu");
+          if (mobileMenu.classList.contains("hidden")) {
+            mobileMenu.classList.remove("hidden");
+          } else {
+            mobileMenu.classList.add("hidden");
+          }
+        });
+
+      document
+        .getElementById("prediction-form")
+        .addEventListener("submit", async (e) => {
+          e.preventDefault();
+          const formData = new FormData(e.target);
+          const data = Object.fromEntries(formData.entries());
+
+          const response = await fetch("/predict", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+          });
+
+          const result = await response.text();
+          document.getElementById("prediction-result").innerHTML = result;
+        });
+    </script>
+  </body>
+</html>
